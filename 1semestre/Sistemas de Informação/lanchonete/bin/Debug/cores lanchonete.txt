@@ -1,0 +1,28 @@
+cores lanchonete
+
+vermelho: 132; 15; 15
+bege claro: 241; 208; 162
+
+Try
+    sql = "select * from tb_contas where cpf='" & txt_cpf.Text & "' AND senha='" & txt_senha.Text & "'"
+    rs = db.Execute(sql)
+    If rs.EOF = False Then
+        MsgBox("Login bem sucedido!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+        If cmb_tipo_func.Text = "Dono" Then
+            Form_dono.Show()
+            Me.Hide()
+        ElseIf cmb_tipo_func.Text = "Recepcionista" Then
+            'Form_recepcionista.show()
+            Me.Hide()
+        ElseIf cmb_tipo_func.Text = "Cozinheiro" Then
+            'Form_cozinheiro.show()
+            Me.Hide()
+        End If
+    Else
+        MsgBox("Login ou senha incorretos", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        Exit Sub
+    End If
+Catch ex As Exception
+    MsgBox("Dados incorretos / Este cliente não existe!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
+    Me.Hide()
+End Try
