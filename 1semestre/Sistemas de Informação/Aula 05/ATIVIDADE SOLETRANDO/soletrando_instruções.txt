@@ -1,0 +1,26 @@
+Atividade soletrando
+
+03 Níveis:
+	Básico = Acerte 05 palavras
+	Intermediário = 05 palavras
+	Avançado = 05 Palavras
+
+Regras: 
+	- As palavras não podem se repetir;
+	- O usuário só poderá ouvir a palavra novamente uma vez por rodada;
+	- O usuário pode pular uma única vez no jogo;
+
+Quando se ganha?
+	- Caso o usuário acerte todas as palavras de forma consecutiva (15 palavras)
+
+Quando se perde?
+	- Caso haja um erro neste processo.
+	- Exibir uma mensagem de jogar novamente.
+
+Entrada de dados:
+	- Digitar a palavra (via inputbox)
+	- Ouvirão a palavra antes de ser digitada (via carregar_voz)
+
+Saída de dados:
+	- Quantidade de acertos (via msgbox)
+	- Nível em que o usuário está

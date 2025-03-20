@@ -1,0 +1,23 @@
+
+call nivel_intermediario
+sub nivel_intermediario()
+p2(1) = "cabeleireiro"
+p2(2) = "caranguejo"
+p2(3) = "cérebro"
+p2(4) = "periquito"
+p2(5) = "meteorologia"
+
+end sub
+
+
+
+call nivel_avancado
+sub nivel_avancado()
+p3(1) = "assoreamento"
+p3(2) = "fosforescência"
+p3(3) = "réveillon"
+p3(4) = "ascensorista"
+p3(5) = "imunodeficiência"
+
+end sub
+
